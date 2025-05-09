@@ -8,10 +8,10 @@ export default function Home() {
   const [limitReached, setLimitReached] = useState(false);
 
   return (
-    <div className="w-full max-w-xl px-4 space-y-6">
-      <h1 className="text-2xl font-bold text-center">AI Resume Tailor</h1>
+    <div className="w-full max-w-md px-4 space-y-4 bg-white/80 backdrop-blur-sm border border-gray-200 shadow-md rounded-xl">
+      <h1 className="text-xl font-bold text-center pt-4">AI Resume Tailor</h1>
 
-      <form className="space-y-4 w-full">
+      <form className="space-y-3 w-full px-2 pb-4">
         <div className="flex flex-col">
           <label className="text-sm font-medium mb-1">
             Upload Resume (.docx or .pdf)
@@ -19,7 +19,7 @@ export default function Home() {
           <input
             type="file"
             accept=".pdf,.doc,.docx"
-            className="border border-gray-300 rounded px-4 py-2 text-sm"
+            className="border border-gray-300 rounded px-3 py-2 text-sm"
           />
         </div>
 
@@ -28,9 +28,9 @@ export default function Home() {
             Paste Job Description or Job Posting URL
           </label>
           <textarea
-            rows={6}
+            rows={5}
             placeholder="Paste a job description or job URL..."
-            className="border border-gray-300 rounded px-4 py-2 text-sm"
+            className="border border-gray-300 rounded px-3 py-2 text-sm"
           />
         </div>
 
@@ -52,27 +52,27 @@ export default function Home() {
       </form>
 
       {loading && (
-        <div className="text-center text-blue-600 font-semibold mt-4">
+        <div className="text-center text-blue-600 font-semibold pb-3">
           ⏳ Tailoring your resume...
         </div>
       )}
 
       {!loading && output && (
-        <div className="w-full mt-6">
+        <div className="w-full px-2 pb-3">
           <label className="block text-sm font-medium mb-1">
             Tailored Resume Output
           </label>
           <textarea
             value={output}
             readOnly
-            rows={10}
-            className="w-full border border-gray-300 rounded px-4 py-2 text-sm"
+            rows={8}
+            className="w-full border border-gray-300 rounded px-3 py-2 text-sm"
           />
         </div>
       )}
 
       {limitReached && (
-        <div className="text-center border border-yellow-400 bg-yellow-100 text-yellow-800 px-4 py-3 rounded mt-6 w-full">
+        <div className="text-center border border-yellow-400 bg-yellow-100 text-yellow-800 px-4 py-3 rounded mb-4">
           You’ve reached your free limit.{' '}
           <a href="#" className="underline font-medium">
             Go Pro
