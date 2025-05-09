@@ -9,7 +9,7 @@ export const Nav = () => {
       <nav className="flex items-center justify-between px-0 sm:px-2 py-2">
         {/* Logo Left */}
         <Link href="/" aria-label="Home" className="flex items-center ml-4">
-          <Image src="/logo2_opt.png" alt="Logo" width={88} height={88} className="object-contain" />
+          <Image src="/logo2_opt.png" alt="Logo" width={55} height={55} className="object-contain" />
         </Link>
 
         <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight text-white text-center" style={{ fontFamily: 'Unbounded, sans-serif' }}>
