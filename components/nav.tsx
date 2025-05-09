@@ -19,7 +19,7 @@ export const Nav = () => {
             alt="User Avatar"
             width={55}
             height={55}
-            className="rounded-full object-cover"
+            className="rounded-full object-cover mr-4"
           />
         
       </nav>
