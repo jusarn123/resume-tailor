@@ -5,12 +5,10 @@ import { Footer } from '@/components/footer';
 
 export const LayoutShell = ({ children }: { children: React.ReactNode }) => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Nav />
-      <div className="flex-grow">
-        <main className="p-6">{children}</main>
-      </div>
+      <main className="flex-grow p-6">{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
