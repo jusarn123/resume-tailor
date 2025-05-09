@@ -11,7 +11,7 @@ export const Nav = () => {
         <Link href="/" aria-label="Home" className="flex items-left ml-6">
           <Image src="/logo2_opt.png" alt="Logo" width={30} height={30} className="object-contain" />
         </Link>
-        <h1 className="ml-6 text-2xl md:text-5xl font-extrabold tracking-tight text-white ml-4" style={{ fontFamily: 'Unbounded, sans-serif' }}>
+        <h1 className="ml-6 text-2xl md:text-5xl font-extrabold tracking-tight text-white items-left" style={{ fontFamily: 'Unbounded, sans-serif' }}>
           ResumeAI
         </h1>
 
