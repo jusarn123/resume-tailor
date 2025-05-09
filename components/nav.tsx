@@ -12,7 +12,7 @@ export const Nav = () => {
           <Image src="/logo.png" alt="Logo" width={48} height={48} />
         </Link>
         {/* Account Avatar Right */}
-        <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white">
+        <div className="w-10 h-10 rounded-full overflow-hidden">
           <Image
             src="/avatar-placeholder.png"
             alt="Account Avatar"
