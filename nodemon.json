@@ -1,0 +1,13 @@
+{
+  "watch": [
+    "app/layout.tsx",
+    "app/_components/layout-shell.tsx",
+    "tailwind.config.ts",
+    "next.config.ts",
+    "postcss.config.js",
+    "globals.css"
+  ],
+  "ext": "ts,tsx,js,json,css",
+  "ignore": [".next", "node_modules"],
+  "exec": "rmdir /s /q .next && set PORT=8082 && npm run dev"
+}
