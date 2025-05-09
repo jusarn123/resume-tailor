@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="absolute top-0 left-0 w-full h-full z-0 bg-gradient-to-br from-blue-900 to-blue-600 text-white flex flex-col items-center justify-center px-4 py-12">
       <div className="w-full flex justify-between items-center mb-8 max-w-6xl">
-        <Image src="/logo.svg" alt="Logo" width={48} height={48} className="rounded" />
+        <Image src="/logo.png" alt="Logo" width={48} height={48} />
       </div>
 
       <div className="text-center space-y-4 mb-12">
