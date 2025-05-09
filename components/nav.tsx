@@ -1,29 +1,30 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from "next/navigation";
-import { navLinks } from "@/config";
+import { usePathname } from 'next/navigation';
+import { navLinks } from '@/config';
 
 export const Nav = () => {
-  const setActiveLink = (href: string, pathname: string) => {
-    if (pathname === href || (pathname.split("/")[1] === "blog" && href === "/blog")) {
-      return "text-blue-500";
-    }
-    return "text-zinc-100";
-  };
   const pathname = usePathname();
 
+  const setActiveLink = (href: string) => {
+    if (pathname === href || (pathname.split('/')[1] === 'blog' && href === '/blog')) {
+      return 'text-white font-bold';
+    }
+    return 'text-blue-100';
+  };
+
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-700 px-4 py-3 shadow">
-      <div className="flex justify-between items-center max-w-7xl mx-auto">
+    <aside className="w-full bg-blue-950/80 backdrop-blur-md shadow-md px-6 py-4 z-50">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" aria-label="Home">
-          <p className="text-2xl font-bold text-blue-600">↻</p>
+          <p className="text-3xl font-bold text-white tracking-tight">&#120148;</p>
         </Link>
-        <ul className="flex gap-6 text-sm text-neutral-800 dark:text-neutral-200">
+        <ul className="flex gap-6 text-sm">
           {navLinks.map((link) => (
             <li key={link.text}>
               <Link
-                className={`${setActiveLink(link.href, pathname)} hover:text-blue-500 dark:hover:text-blue-600 transition`}
+                className={`${setActiveLink(link.href)} hover:text-white transition duration-200`}
                 href={link.href}
               >
                 {link.text}
@@ -31,7 +32,7 @@ export const Nav = () => {
             </li>
           ))}
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </aside>
   );
 };
