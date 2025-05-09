@@ -15,7 +15,7 @@ export const Nav = () => {
   };
 
   return (
-    <aside className="w-full bg-blue-950/80 backdrop-blur-md shadow-md px-6 py-4 z-50">
+    <aside className="w-full px-6 py-4 bg-white/10 backdrop-blur-md border-b border-white/10 z-50">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" aria-label="Home">
           <p className="text-3xl font-bold text-white tracking-tight">&#120148;</p>
