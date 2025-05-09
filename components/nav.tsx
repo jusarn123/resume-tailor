@@ -1,43 +1,37 @@
-"use client";
+'use client';
 
-import Link from 'next/link'
+import Link from 'next/link';
 import { usePathname } from "next/navigation";
-
 import { navLinks } from "@/config";
 
 export const Nav = () => {
-    const setActiveLink = (href: string, pathname: string) => {
-        if (pathname === href || (pathname.split("/")[1] === "blog" && href === "/blog")) {
-            return "text-blue-500";
-        }
-        return "text-zinc-100";
+  const setActiveLink = (href: string, pathname: string) => {
+    if (pathname === href || (pathname.split("/")[1] === "blog" && href === "/blog")) {
+      return "text-blue-500";
     }
-    const pathname = usePathname();
+    return "text-zinc-100";
+  };
+  const pathname = usePathname();
 
-    return (
-        <aside className="px-10 tracking-tight pt-8" aria-label="Main Navigation">
-            <nav className="flex flex-row items-center justify-between">
-                <Link href="/" aria-label="Home">
-                    <p className="mb-1 text-2xl" aria-hidden="true">
-                        &#120148;
-                    </p>
-                </Link>
-                <ul className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-md text-neutral-800 dark:text-neutral-200">
-                    {navLinks.map((link: { href: string; text: string }) => {
-                        return (
-                            <li key={link.text}>
-                                <Link
-                                    className={`${setActiveLink(link.href, pathname)} transition duration-300 hover:text-blue-500 dark:hover:text-blue-600`}
-                                    href={link.href}
-                                    aria-current={pathname === link.href ? "page" : undefined}
-                                >
-                                    {link.text}
-                                </Link>
-                            </li>
-                        );
-                    })}
-                </ul>
-            </nav>
-        </aside>
-    );
-}
+  return (
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-700 px-4 py-3 shadow">
+      <div className="flex justify-between items-center max-w-7xl mx-auto">
+        <Link href="/" aria-label="Home">
+          <p className="text-2xl font-bold text-blue-600">↻</p>
+        </Link>
+        <ul className="flex gap-6 text-sm text-neutral-800 dark:text-neutral-200">
+          {navLinks.map((link) => (
+            <li key={link.text}>
+              <Link
+                className={`${setActiveLink(link.href, pathname)} hover:text-blue-500 dark:hover:text-blue-600 transition`}
+                href={link.href}
+              >
+                {link.text}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
+};
