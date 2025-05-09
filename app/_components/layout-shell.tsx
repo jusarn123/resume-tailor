@@ -5,9 +5,9 @@ import { Footer } from '@/components/footer';
 
 export const LayoutShell = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex flex-col min-h-screen pt-16">
+    <div className="flex flex-col min-h-screen">
       <Nav />
-      <main className="flex-grow">{children}</main>
+      <main className="flex-grow flex items-center justify-center">{children}</main>
       <Footer />
     </div>
   );
