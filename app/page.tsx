@@ -8,21 +8,24 @@ export default function Home() {
   const [limitReached, setLimitReached] = useState(false);
 
   return (
-    <main className="flex items-center justify-center min-h-[calc(100vh-160px)] px-4 py-8">
-      <div className="w-full max-w-xl text-gray-900 space-y-6 bg-white p-6 rounded-xl shadow-xl">
-        <h1 className="text-4xl font-extrabold text-center" style={{ fontFamily: 'Playfair Display, serif' }}>
+    <main className="flex flex-col items-center justify-center min-h-[calc(100vh-160px)] px-4 py-12 bg-gradient-to-br from-blue-900 to-blue-600 text-white">
+      <div className="text-center space-y-4 mb-12">
+        <h1 className="text-6xl font-extrabold tracking-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
           AI Resume Tailor
         </h1>
+        <p className="text-lg font-light text-blue-100 max-w-xl mx-auto">
+          Instantly shape your resume to fit any job description.
+        </p>
+      </div>
 
-        <p className="text-center text-blue-600 text-lg">Tailor your resume instantly.</p>
-
+      <div className="w-full max-w-3xl space-y-6">
         {/* Resume Upload */}
         <div>
           <label className="block text-sm font-medium mb-1">Upload Resume (.docx or .pdf)</label>
           <input
             type="file"
             accept=".pdf,.doc,.docx"
-            className="w-full border border-gray-300 rounded px-3 py-2 text-sm"
+            className="w-full border border-blue-300 bg-white/10 backdrop-blur-md rounded px-4 py-2 text-sm text-white placeholder-white"
           />
         </div>
 
@@ -32,7 +35,7 @@ export default function Home() {
           <textarea
             rows={5}
             placeholder="Paste a job description or job URL..."
-            className="w-full border border-gray-300 rounded px-3 py-2 text-sm"
+            className="w-full border border-blue-300 bg-white/10 backdrop-blur-md rounded px-4 py-2 text-sm text-white placeholder-white"
           />
         </div>
 
@@ -48,13 +51,13 @@ export default function Home() {
               setOutput('Tailored resume content goes here...');
             }, 2000);
           }}
-          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full transition duration-200"
+          className="bg-white text-blue-700 font-bold py-3 px-6 rounded-full w-full hover:bg-blue-100 transition duration-200"
         >
           ✨ Tailor My Resume
         </button>
 
         {/* Loading State */}
-        {loading && <div className="text-center text-blue-600 font-semibold">⏳ Tailoring your resume...</div>}
+        {loading && <div className="text-center text-white font-semibold">⏳ Tailoring your resume...</div>}
 
         {/* AI Output */}
         {!loading && output && (
@@ -64,7 +67,7 @@ export default function Home() {
               value={output}
               readOnly
               rows={8}
-              className="w-full border border-gray-300 rounded px-3 py-2 text-sm"
+              className="w-full border border-blue-300 bg-white/10 backdrop-blur-md rounded px-4 py-2 text-sm text-white"
             />
           </div>
         )}
