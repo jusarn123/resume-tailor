@@ -36,7 +36,7 @@ export default function Home() {
           <label className="block text-sm font-medium mb-1">Paste Job Description or Job Posting URL</label>
           <textarea
             rows={8}
-            placeholder="Paste a job description or job URL..."
+            placeholder="Paste a job description or URL..."
             className="w-full border border-blue-300 bg-white/10 backdrop-blur-md rounded px-4 py-3 text-sm text-white placeholder-white"
           />
         </div>
