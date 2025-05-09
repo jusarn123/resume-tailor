@@ -8,8 +8,8 @@ export default function Home() {
   const [limitReached, setLimitReached] = useState(false);
 
   return (
-    <div className="flex w-full flex-grow items-center justify-center px-4">
-      <div className="w-full max-w-xl space-y-6 py-12">
+    <div className="flex flex-col justify-center items-center min-h-screen px-4">
+      <div className="w-full max-w-xl space-y-6">
         <h1 className="text-2xl font-bold text-center">AI Resume Tailor</h1>
 
         <form className="space-y-4">
