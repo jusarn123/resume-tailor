@@ -17,14 +17,13 @@ export const Nav = () => {
 
         {/* Account Avatar Right */}
         
-          <Image
-            src="/avatar-placeholder.png"
-            alt="User Avatar"
-            width={60}
-            height={60}
-            className="rounded-full object-cover mr-6"
-          />
-        
+        <Image
+          src="/avatar-placeholder.png"
+          alt="User Avatar"
+          width={60}
+          height={60}
+          className="rounded-full object-cover mr-6"
+        />
       </nav>
     </aside>
   );
