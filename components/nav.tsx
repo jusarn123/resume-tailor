@@ -13,7 +13,7 @@ export const Nav = () => {
         </Link>
 
         {/* Account Avatar Right */}
-        <div className="flex items-center mr-4">
+        
           <Image
             src="/avatar-placeholder.png"
             alt="User Avatar"
@@ -21,7 +21,7 @@ export const Nav = () => {
             height={55}
             className="rounded-full object-cover"
           />
-        </div>
+        
       </nav>
     </aside>
   );
