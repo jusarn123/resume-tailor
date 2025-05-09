@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <div className="w-full max-w-xl px-4 space-y-6">
-      <h1 className="text-4xl font-extrabold text-center text-blue-800 tracking-tight">
+      <h1 className="text-4xl font-extrabold text-center tracking-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
         AI Resume Tailor
       </h1>
       <form className="space-y-4 w-full">
