@@ -8,7 +8,7 @@ export const Nav = () => {
     <aside className="w-full bg-transparent z-50">
       <nav className="flex items-center justify-between px-0 sm:px-2 py-2">
         {/* Logo Left */}
-        <Link href="/" aria-label="Home" className="flex items-center ml-0">
+        <Link href="/" aria-label="Home" className="flex items-center ml-2">
           <Image src="/logo.png" alt="Logo" width={88} height={88} className="object-contain" />
         </Link>
 
