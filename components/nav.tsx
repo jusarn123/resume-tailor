@@ -20,8 +20,8 @@ export const Nav = () => {
           <Image
             src="/avatar-placeholder.png"
             alt="User Avatar"
-            width={55}
-            height={55}
+            width={58}
+            height={58}
             className="rounded-full object-cover mr-6"
           />
         
