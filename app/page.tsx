@@ -12,33 +12,34 @@ export default function Home() {
       <div className="w-full max-w-xl space-y-6 py-12">
         <h1 className="text-2xl font-bold text-center">AI Resume Tailor</h1>
 
-        {/* Resume Upload */}
-        <div>
-          <label className="block text-sm font-medium mb-1">
-            Upload Resume (.docx or .pdf)
-          </label>
-          <input
-            type="file"
-            accept=".pdf,.doc,.docx"
-            className="block w-full border border-gray-300 rounded px-4 py-2 text-sm"
-          />
-        </div>
+        <form className="space-y-4">
+          {/* Resume Upload */}
+          <div className="flex flex-col">
+            <label className="text-sm font-medium mb-1">
+              Upload Resume (.docx or .pdf)
+            </label>
+            <input
+              type="file"
+              accept=".pdf,.doc,.docx"
+              className="border border-gray-300 rounded px-4 py-2 text-sm"
+            />
+          </div>
 
-        {/* Job Description or URL */}
-        <div>
-          <label className="block text-sm font-medium mb-1">
-            Paste Job Description or Job Posting URL
-          </label>
-          <textarea
-            rows={6}
-            placeholder="Paste a job description or job URL..."
-            className="block w-full border border-gray-300 rounded px-4 py-2 text-sm"
-          />
-        </div>
+          {/* Job Description or URL */}
+          <div className="flex flex-col">
+            <label className="text-sm font-medium mb-1">
+              Paste Job Description or Job Posting URL
+            </label>
+            <textarea
+              rows={6}
+              placeholder="Paste a job description or job URL..."
+              className="border border-gray-300 rounded px-4 py-2 text-sm"
+            />
+          </div>
 
-        {/* Submit Button */}
-        <div>
+          {/* Submit Button */}
           <button
+            type="button"
             onClick={() => {
               setLoading(true);
               setOutput('');
@@ -52,7 +53,7 @@ export default function Home() {
           >
             Tailor My Resume
           </button>
-        </div>
+        </form>
 
         {/* Loading Spinner */}
         {loading && (
