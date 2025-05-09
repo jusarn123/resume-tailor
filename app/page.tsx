@@ -8,12 +8,11 @@ export default function Home() {
   const [limitReached, setLimitReached] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen px-4">
+    <div className="flex items-center justify-center min-h-screen px-4">
       <div className="w-full max-w-xl space-y-6">
         <h1 className="text-2xl font-bold text-center">AI Resume Tailor</h1>
 
         <form className="space-y-4">
-          {/* Resume Upload */}
           <div className="flex flex-col">
             <label className="text-sm font-medium mb-1">
               Upload Resume (.docx or .pdf)
@@ -25,7 +24,6 @@ export default function Home() {
             />
           </div>
 
-          {/* Job Description or URL */}
           <div className="flex flex-col">
             <label className="text-sm font-medium mb-1">
               Paste Job Description or Job Posting URL
@@ -37,7 +35,6 @@ export default function Home() {
             />
           </div>
 
-          {/* Submit Button */}
           <button
             type="button"
             onClick={() => {
@@ -55,14 +52,12 @@ export default function Home() {
           </button>
         </form>
 
-        {/* Loading Spinner */}
         {loading && (
           <div className="text-center text-blue-600 font-semibold">
             ⏳ Tailoring your resume...
           </div>
         )}
 
-        {/* AI Output */}
         {!loading && output && (
           <div>
             <label className="block text-sm font-medium mb-1 mt-4">
@@ -77,7 +72,6 @@ export default function Home() {
           </div>
         )}
 
-        {/* Upgrade Prompt */}
         {limitReached && (
           <div className="text-center border border-yellow-400 bg-yellow-100 text-yellow-800 px-4 py-3 rounded">
             You’ve reached your free limit.{' '}
