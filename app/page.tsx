@@ -12,9 +12,9 @@ export default function Home() {
     <main className="absolute top-0 left-0 w-full h-full z-0 bg-gradient-to-br from-blue-900 to-blue-600 text-white flex flex-col items-center justify-center px-4 py-12">
       
       <div className="text-center space-y-4 mb-12">
-      <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight text-white text-center" style={{ fontFamily: 'Unbounded, sans-serif' }}>
-        AI Resume Tailor
-      </h1>
+        <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight text-white text-center" style={{ fontFamily: 'Unbounded, sans-serif' }}>
+          AI Resume Tailor
+        </h1>
         <p className="text-lg font-light text-blue-100 max-w-xl mx-auto">
           Instantly shape your resume to fit any job description.
         </p>
