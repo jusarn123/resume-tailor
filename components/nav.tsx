@@ -6,10 +6,10 @@ import Image from 'next/image';
 export const Nav = () => {
   return (
     <aside className="w-full bg-transparent z-50">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
+      <nav className="flex items-center justify-between px-2 sm:px-4 py-2">
         {/* Logo Left */}
         <Link href="/" aria-label="Home" className="flex items-center">
-          <Image src="/logo.png" alt="Logo" width={60} height={60} className="object-contain" />
+          <Image src="/logo.png" alt="Logo" width={72} height={72} className="object-contain" />
         </Link>
 
         {/* Account Avatar Right */}
@@ -17,8 +17,8 @@ export const Nav = () => {
           <Image
             src="/avatar-placeholder.png"
             alt="User Avatar"
-            width={52}
-            height={52}
+            width={60}
+            height={60}
             className="rounded-full object-cover"
           />
         </div>
