@@ -15,9 +15,9 @@ export default function Home() {
       </div>
 
       <div className="text-center space-y-4 mb-12">
-        <h1 className="text-5xl md:text-6xl font-semibold tracking-tight" style={{ fontFamily: 'Merriweather, serif' }}>
-          AI Resume Tailor
-        </h1>
+      <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight text-white text-center" style={{ fontFamily: 'Unbounded, sans-serif' }}>
+        AI Resume Tailor
+      </h1>
         <p className="text-lg font-light text-blue-100 max-w-xl mx-auto">
           Instantly shape your resume to fit any job description.
         </p>
