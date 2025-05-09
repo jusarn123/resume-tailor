@@ -21,6 +21,11 @@ export default function Home() {
         </p>
       </div>
       */}
+      <div className="text-center space-y-4 mb-22">
+        <p className="text-lg font-light text-blue-100 max-w-xl mx-auto">
+          Instantly shape your resume to fit any job description.
+        </p>
+      </div>
       <div className="w-full max-w-3xl space-y-6">
         {/* Resume Upload */}
         <div>
