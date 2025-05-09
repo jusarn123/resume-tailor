@@ -5,21 +5,22 @@ import Image from 'next/image';
 
 export const Nav = () => {
   return (
-    <aside className="w-full px-6 py-4 bg-transparent z-50">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between">
+    <aside className="w-full bg-transparent z-50">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
         {/* Logo Left */}
-        <Link href="/" aria-label="Home">
-          <Image src="/logo.png" alt="Logo" width={48} height={48} />
+        <Link href="/" aria-label="Home" className="flex items-center">
+          <Image src="/logo.png" alt="Logo" width={60} height={60} className="object-contain" />
         </Link>
+
         {/* Account Avatar Right */}
-        <div className="w-10 h-10 rounded-full overflow-hidden">
-        <Image
-          src="/avatar-placeholder.png"
-          alt="User Avatar"
-          width={40}
-          height={40}
-          className="rounded-full object-cover"
-        />
+        <div className="flex items-center">
+          <Image
+            src="/avatar-placeholder.png"
+            alt="User Avatar"
+            width={52}
+            height={52}
+            className="rounded-full object-cover"
+          />
         </div>
       </nav>
     </aside>
