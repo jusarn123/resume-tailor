@@ -8,7 +8,7 @@ export default function Home() {
   const [limitReached, setLimitReached] = useState(false);
 
   return (
-    <main className="w-full flex flex-col items-center justify-center min-h-[calc(100vh-160px)] px-4 py-12 bg-gradient-to-br from-blue-900 to-blue-600 text-white">
+    <main className="absolute top-0 left-0 w-full h-full z-0 bg-gradient-to-br from-blue-900 to-blue-600 text-white flex flex-col items-center justify-center px-4 py-12">
       <div className="text-center space-y-4 mb-12">
         <h1 className="text-6xl font-extrabold tracking-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
           AI Resume Tailor
