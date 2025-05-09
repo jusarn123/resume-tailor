@@ -16,6 +16,9 @@ export default function ParticlesBackground() {
       init={particlesInit}
       options={{
         fullScreen: { enable: true },
+        background: {
+          color: '#1E3A8A', // Tailwind's blue-800
+        },
         particles: {
           number: { value: 60 },
           size: { value: 3 },
@@ -38,9 +41,6 @@ export default function ParticlesBackground() {
             repulse: { distance: 100 },
             push: { quantity: 4 },
           },
-        },
-        background: {
-          color: '#1E3A8A', // Tailwind's blue-800
         },
       }}
     />
