@@ -13,7 +13,7 @@ export const Nav = () => {
         </Link>
 
         <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight text-white text-center" style={{ fontFamily: 'Unbounded, sans-serif' }}>
-          AI Resume Tailor
+          ResumeAI
         </h1>
 
         {/* Account Avatar Right */}
