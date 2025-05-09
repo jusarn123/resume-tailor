@@ -2,7 +2,7 @@
 
 import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles-engine';
+import { loadFull } from 'tsparticles-engine'; // ✅ Correct import
 import type { Engine } from 'tsparticles-engine';
 
 export default function ParticlesBackground() {
@@ -17,7 +17,7 @@ export default function ParticlesBackground() {
       options={{
         fullScreen: { enable: true },
         background: {
-          color: '#1E3A8A', // Tailwind's blue-800
+          color: '#1E3A8A',
         },
         particles: {
           number: { value: 60 },
