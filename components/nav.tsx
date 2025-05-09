@@ -1,37 +1,27 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { navLinks } from '@/config';
+import Image from 'next/image';
 
 export const Nav = () => {
-  const pathname = usePathname();
-
-  const setActiveLink = (href: string) => {
-    if (pathname === href || (pathname.split('/')[1] === 'blog' && href === '/blog')) {
-      return 'text-white font-bold';
-    }
-    return 'text-blue-100';
-  };
-
   return (
-    <aside className="w-full px-6 py-4 bg-white/10 backdrop-blur-md border-b border-white/10 z-50">
+    <aside className="w-full px-6 py-4 bg-transparent z-50">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
+        {/* Logo Left */}
         <Link href="/" aria-label="Home">
-          <p className="text-3xl font-bold text-white tracking-tight">&#120148;</p>
+          <Image src="/logo.svg" alt="Logo" width={36} height={36} className="rounded" />
         </Link>
-        <ul className="flex gap-6 text-sm">
-          {navLinks.map((link) => (
-            <li key={link.text}>
-              <Link
-                className={`${setActiveLink(link.href)} hover:text-white transition duration-200`}
-                href={link.href}
-              >
-                {link.text}
-              </Link>
-            </li>
-          ))}
-        </ul>
+
+        {/* Account Avatar Right */}
+        <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white">
+          <Image
+            src="/avatar-placeholder.png"
+            alt="Account Avatar"
+            width={40}
+            height={40}
+            className="object-cover w-full h-full"
+          />
+        </div>
       </nav>
     </aside>
   );
