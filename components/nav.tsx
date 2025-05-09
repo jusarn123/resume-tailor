@@ -12,6 +12,10 @@ export const Nav = () => {
           <Image src="/logo.png" alt="Logo" width={88} height={88} className="object-contain" />
         </Link>
 
+        <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight text-white text-center" style={{ fontFamily: 'Unbounded, sans-serif' }}>
+          AI Resume Tailor
+        </h1>
+
         {/* Account Avatar Right */}
         
           <Image
