@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const Nav = () => {
   return (
     <aside className="w-full bg-transparent z-50">
-      <nav className="flex items-center justify-between px-0 sm:px-2 py-0">
+      <nav className="flex items-center justify-between px-0 sm:px-2 py-2">
         {/* Logo Left */}
         <Link href="/" aria-label="Home" className="flex items-center ml-6">
           <Image src="/logo2_opt.png" alt="Logo" width={30} height={30} className="object-contain" />
