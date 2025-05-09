@@ -8,8 +8,8 @@ export default function Home() {
   const [limitReached, setLimitReached] = useState(false);
 
   return (
-    <div className="flex flex-col h-full items-center px-4">
-      <div className="w-full max-w-xl space-y-6">
+    <div className="flex flex-col min-h-screen items-center justify-center px-4">
+      <div className="w-full max-w-xl space-y-6 py-12">
         <h1 className="text-2xl font-bold text-center">AI Resume Tailor</h1>
 
         {/* Resume Upload */}
@@ -46,7 +46,7 @@ export default function Home() {
               setTimeout(() => {
                 setLoading(false);
                 setOutput('Tailored resume content goes here...');
-              }, 2000); // simulate 2s processing
+              }, 2000);
             }}
             className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded w-full"
           >
