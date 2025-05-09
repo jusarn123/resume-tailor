@@ -9,9 +9,8 @@ export const Nav = () => {
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo Left */}
         <Link href="/" aria-label="Home">
-          <Image src="/logo.svg" alt="Logo" width={36} height={36} className="rounded" />
+          <Image src="/logo.png" alt="Logo" width={48} height={48} />
         </Link>
-
         {/* Account Avatar Right */}
         <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white">
           <Image
