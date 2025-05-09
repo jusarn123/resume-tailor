@@ -76,7 +76,7 @@ export default function Home() {
           </div>
         )}
 
-        {/* Upgrade Prompt */}
+        {/* Upgrade Prompt test */}
         {limitReached && (
           <div className="text-center border border-yellow-400 bg-yellow-100 text-yellow-800 px-4 py-3 rounded">
             You’ve reached your free limit.{' '}
