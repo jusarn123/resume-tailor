@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <main className="absolute top-0 left-0 w-full h-full z-0 bg-gradient-to-br from-blue-900 to-blue-600 text-white flex flex-col items-center justify-center px-4 py-12">
       
+      {/*
       <div className="text-center space-y-4 mb-22">
         <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight text-white text-center" style={{ fontFamily: 'Unbounded, sans-serif' }}>
           AI Resume Tailor
@@ -19,7 +20,7 @@ export default function Home() {
           Instantly shape your resume to fit any job description.
         </p>
       </div>
-
+      */}
       <div className="w-full max-w-3xl space-y-6">
         {/* Resume Upload */}
         <div>
