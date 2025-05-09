@@ -29,14 +29,8 @@ export const metadata: Metadata = {
     "Tailwind v4 template",
   ],
   authors: [
-    {
-      name: site.name,
-      url: site.url,
-    },
-    {
-      name: "cbm",
-      url: "https://cbm.sh",
-    },
+    { name: site.name, url: site.url },
+    { name: "cbm", url: "https://cbm.sh" },
   ],
   creator: site.name,
   openGraph: {
