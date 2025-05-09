@@ -10,7 +10,7 @@ export const Nav = () => {
         {/* Logo Left */}
         <Link href="/" aria-label="Home" className="flex items-center ml-6">
           <Image src="/logo2_opt.png" alt="Logo" width={30} height={30} className="object-contain" />
-          <h1 className="ml-6 text-2xl md:text-5xl font-extrabold tracking-tight text-white text-center" style={{ fontFamily: 'Unbounded, sans-serif' }}>
+          <h1 className="ml-4 text-2xl md:text-5xl font-extrabold tracking-tight text-white text-center" style={{ fontFamily: 'Unbounded, sans-serif' }}>
             ResumeAI
           </h1>
         </Link>
