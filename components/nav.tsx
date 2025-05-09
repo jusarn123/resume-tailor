@@ -13,13 +13,13 @@ export const Nav = () => {
         </Link>
         {/* Account Avatar Right */}
         <div className="w-10 h-10 rounded-full overflow-hidden">
-          <Image
-            src="/avatar-placeholder.png"
-            alt="Account Avatar"
-            width={40}
-            height={40}
-            className="object-cover w-full h-full"
-          />
+        <Image
+          src="/avatar-placeholder.png"
+          alt="User Avatar"
+          width={40}
+          height={40}
+          className="rounded-full object-cover"
+        />
         </div>
       </nav>
     </aside>
