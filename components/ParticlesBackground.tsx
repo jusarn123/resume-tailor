@@ -1,8 +1,9 @@
-// components/ParticlesBackground.tsx
+'use client';
+
 import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
-import type { Engine } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
+import type { Engine } from 'tsparticles-engine';
 
 export default function ParticlesBackground() {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -16,11 +17,17 @@ export default function ParticlesBackground() {
       options={{
         fullScreen: { enable: true },
         particles: {
-          number: { value: 50 },
+          number: { value: 60 },
           size: { value: 3 },
           move: { enable: true, speed: 1 },
           opacity: { value: 0.5 },
-          links: { enable: true, distance: 150, color: '#ffffff', opacity: 0.4, width: 1 },
+          links: {
+            enable: true,
+            distance: 150,
+            color: '#ffffff',
+            opacity: 0.4,
+            width: 1,
+          },
         },
         interactivity: {
           events: {
