@@ -22,8 +22,8 @@ export default function Home() {
       </div>
       */}
       <div className="text-center space-y-4 mb-8">
-        <p className="hidden md:block text-4xl font-light text-blue-100 mb-12">
-          <span className="extrabold">Let's get to work</span>
+        <p className="hidden md:block text-4xl font-light text-blue-200 mb-12">
+          Let's get to work
         </p>
       </div>
       <div className="w-full max-w-3xl space-y-6">
