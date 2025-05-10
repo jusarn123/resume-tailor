@@ -17,7 +17,7 @@ export const Nav = () => {
             className="object-contain w-6 md:w-9"
           />
           <div className="flex flex-col justify-center text-center">
-            <h2 className="text-2xl md:text-5xl tracking-tight text-white" style={{ fontFamily: 'Unbounded, sans-serif' }}>
+            <h2 className="text-2xl md:text-3xl tracking-tight text-white" style={{ fontFamily: 'Unbounded, sans-serif' }}>
               ResumeAI
             </h2>
             <p className="text-xl md:text-1xl font-light text-blue-100 mb-0 md:mb-2">
