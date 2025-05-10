@@ -21,8 +21,8 @@ export default function Home() {
         </p>
       </div>
       */}
-      <div className="text-center text-12 space-y-4 mb-8">
-        <p className="font-light text-blue-100">
+      <div className="text-center space-y-4 mb-8">
+        <p className="text-xl md:text-2xl font-light text-blue-100">
           Drop it. Tailor it. Apply.
         </p>
       </div>
