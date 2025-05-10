@@ -8,7 +8,7 @@ export const Nav = () => {
     <aside className="w-full bg-transparent z-50">
       <nav className="flex items-center justify-between px-0 sm:px-2 py-4">
         {/* Logo Left */}
-        <Link href="/" aria-label="Home" className="flex items-center ml-5">
+        <Link href="/" aria-label="Home" className="flex items-center ml-4">
           <Image src="/logo2_opt.png" alt="Logo" width={30} height={30} className="object-contain w-6 md:w-9" />
           <h2 className="ml-4 text-2xl md:text-5xl tracking-tight text-white text-bottom" style={{ fontFamily: 'Unbounded, sans-serif' }}>
             ResumeAI
