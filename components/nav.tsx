@@ -13,8 +13,8 @@ export const Nav = () => {
             <Image 
               src="/logo2_opt.png" 
               alt="Logo" 
-              width={30}
-              height={30} 
+              width={34}
+              height={34} 
               className="object-contain w-6 md:w-9 self-center"
             />
           </div>
