@@ -22,7 +22,7 @@ export default function Home() {
       </div>
       */}
       <div className="text-center space-y-4 mb-8">
-        <p className="font-light text-blue-100 md:text-20xl mx-auto">
+        <p className="font-light text-blue-100 text-20xl mx-auto">
           Drop it. Tailor it. Apply.
         </p>
       </div>
