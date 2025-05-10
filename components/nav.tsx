@@ -13,6 +13,9 @@ export const Nav = () => {
           <h2 className="ml-4 text-2xl md:text-5xl tracking-tight text-white text-bottom" style={{ fontFamily: 'Unbounded, sans-serif' }}>
             ResumeAI
           </h2>
+          <p className="text-xl md:text-4xl font-light text-blue-100 mb-3 md:mb-12">
+            <span className="extrabold">Drop</span> it. Tailor it. Apply.
+          </p>
         </Link>
 
         {/* Account Avatar Right */}
