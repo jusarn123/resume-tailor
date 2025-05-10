@@ -21,7 +21,7 @@ export const Nav = () => {
               ResumeAI
             </h2>
             <p className="text-xs md:text-xl font-light text-blue-100 mb-0 md:mb-2">
-              Ready, AI, Apply
+              Built for the job.
             </p>
           </div>
         </Link>
