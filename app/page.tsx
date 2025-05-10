@@ -23,7 +23,7 @@ export default function Home() {
       */}
       <div className="text-center space-y-4 mb-8">
         <p className="hidden md:block text-4xl font-light text-blue-100 mb-12">
-          <span className="extrabold">Ready, set, tailor.
+          <span className="extrabold">Ready, set, tailor.</span>
         </p>
       </div>
       <div className="w-full max-w-3xl space-y-6">
