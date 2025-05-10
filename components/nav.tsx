@@ -12,7 +12,7 @@ export const Nav = () => {
           <Image 
             src="/logo2_opt.png" 
             alt="Logo" 
-            width={30} 
+            width={30}
             height={30} 
             className="object-contain w-6 md:w-9"
           />
@@ -25,8 +25,6 @@ export const Nav = () => {
             </p>
           </div>
         </Link>
-
-
         {/* Account Avatar Right */}
         
           <Image
